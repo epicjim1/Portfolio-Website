@@ -1,0 +1,453 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ebebeb;
+    color: black;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: opacity 2s;
+}
+.unScroll{
+    overflow: hidden;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #ebebeb;
+    filter: drop-shadow(0px -10px 20px black);
+    z-index: 20;
+}
+.topName{
+    float: left;
+    height: 100%;
+    width: 350px;
+    /*background-color: red;*/
+}
+.topName img{
+    width: 40px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.topName h2{
+    font-family: lato;
+    position: absolute;
+    top: 24px;
+    left: 65px;
+}
+.topName span{
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.navbar{
+    float: right;
+    height: 100%;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: red;*/
+} 
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.1s;
+    font-family: lato;
+    z-index: 21;
+}
+.navbar a:hover/*:not(.active)*/ {
+    /*background-color: #dbdbdb;*/
+    color: rgb(18, 3, 160);
+}
+.active{
+    /*background-color: #04AA6D;*/
+}
+.vl {
+    border-left: 1px solid black;
+    float: left;
+    margin-top: 25px;
+    height: 30px;
+}
+@media (max-width: 849px) {
+    nav {
+        height: 200px;
+    }
+    .topName{
+        height: 50%;
+    }
+    .navbar{
+        height: 50%;
+    }
+}
+
+
+.splashImage {
+    background-image: url(../images/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.text{
+    width: 1000px;
+    height: 400px;
+    /*background-color: red;*/
+    position: absolute;
+    top: 25vh;
+    left: 800px;
+    /*box-shadow:0 0 20px black;*/
+    border-radius: 25px;
+}
+.text h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: heading;
+    line-height: 75px;
+}
+.text h1 span{
+    font-size: 30px;
+}
+.text p{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: Arial;
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+}
+
+.BGimage{
+    background-image: url(../images/BG.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.mainContainer{
+    position: relative;
+    width: 100%;
+    height: 4500px;
+    /*background-color: aquamarine;*/
+    overflow: hidden;
+}
+.background{
+    width: 100%;
+    height: 4000px;
+    background-color: #ebebeb;
+    position: absolute;
+    left: 0px;
+    top: 550px;
+}
+.projectContainer{
+    background-color: #ebebeb;
+    position: relative;
+    top:  250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: 4080px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 10;
+    /*box-shadow:0 0 20px black;*/
+    /*filter: drop-shadow(5px 5px 5px black);*/
+}
+.projectContainer hr{
+    /*border-top: 1px solid black;*/
+}
+.introText{
+    width: 100%;
+    height: 450px;
+    /*background-color: antiquewhite;*/
+}
+.introText h1{
+    font-family: heading;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.introText p{
+    font-family: lato;
+    text-align: left;
+    margin-left: 140px;
+    margin-right: 140px;
+    line-height: 30px;
+}
+.project{
+    width: 100%;
+    position: relative;
+    height: 600px;
+    /*background-color: blue;*/
+    text-align: left;
+}
+.project h2{
+    font-family: lato;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.project p{
+    font-family: lato;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 30px;
+}
+.project ul{
+    font-family: lato;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 10px;
+    line-height: 30px;
+}
+.projectRight{
+    /*background-color: red;*/
+    width: 50%;
+    position: relative;
+    height: 100%;
+    float: right;
+}
+.projectLeft{
+    /*background-color: red;*/
+    width: 50%;
+    position: relative;
+    height: 100%;
+    float: left;
+}
+.imgLeft{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background-color: aqua;*/
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.imgLeft img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgRight{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background-color: aqua;*/
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.imgRight img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactField{
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 450px;
+}
+.contactText{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: lato;
+    text-align: left;
+}
+.contactText h2{
+    font-size: 45px;
+}
+.contactText p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.contactText h3{
+    margin-top: 70px;
+}
+
+/* Add a background color and some padding around the form */
+.formContainer {
+    /*background-color: red;*/
+    right: 0px;
+    top: 0px;
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    font-family: lato;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 95%;               /* Full width */
+    padding: 8px;             /* Some padding */ 
+    border: 1px solid black; /* Gray border */
+    box-sizing: border-box;   /* Make sure that padding and width stays in place */
+    margin-top: 6px;          /* Add a top margin */
+    margin-bottom: 16px;      /* Bottom margin */
+    resize: vertical          /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+textarea{
+    width: 60%;
+    max-height: 200px;
+    height:150px;
+    margin-bottom: 0px;
+    min-height: 100px;
+}
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    width: 150px;             /* Full width */
+    height: 150px;
+    background-color: rgb(18, 3, 160);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    font-family: lato;
+    font-size: 25px;
+}
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgb(18, 7, 116);
+}
+.footer{
+    /*background-color: red;*/
+    width: 100%;
+    height: 160px;
+    bottom: 0px;
+    position: absolute;
+    font-family: lato;
+    left: 0px;
+    z-index: 22;
+}
+.footer hr{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left{
+    /*background-color: green;*/
+    position: absolute;
+    left: 0px;
+    width: 400px;
+    height: 100%;
+}
+.left h3{
+    position: absolute;
+    bottom: 90px;
+    left: 160px;    
+}
+.left p{
+    position: absolute;
+    bottom: 67px;
+    left: 160px;
+}
+.center{
+    /*background-color: pink;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 70px;
+    text-align: center;
+}
+.center img{
+    margin-top: 4px;
+    padding: 2px;
+    width: 28px;
+}
+.center a:hover{
+    cursor: pointer;
+}
+.right{
+    /*background-color: aqua;*/
+    position: absolute;
+    right: 0px;
+    width: 380px;
+    height: 100%;
+}
+.right p{
+    position: absolute;
+    bottom: 80px;
+    font-size: 13px;
+}
+@media (max-width: 855px) {
+    .footer{
+        height: 300px;
+    }
+    .left{
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 33%;
+    }
+    .left h3{
+        position: absolute;
+        top: 20px;
+        left: 90px;    
+    }
+    .left p{
+        position: absolute;
+        top: 46px;
+        left: 90px; 
+    }
+    /*.center{
+        width: 100%;
+        height: 33%;
+        position: relative;
+    }*/
+    .right{
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 33%;
+    }
+    .right p{
+        position: absolute;
+        top: 46px;
+        left: 90px; 
+    }
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: heading;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
