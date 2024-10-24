@@ -15,8 +15,8 @@
     #hamburger-nav {
         display: flex;
     }
-    #experience,
-    .experience-details-container {
+    #skills,
+    .skills-details-container {
         margin-top: 2rem;
     }
     #profile,
@@ -67,7 +67,7 @@
     .nav-links li a {
         font-size: 1rem;
     }
-    .experience-sub-title {
+    .skills-sub-title {
         font-size: 1.25rem;
     }
     .logo {
@@ -121,9 +121,12 @@
     #hamburger-nav {
       display: flex;
     }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
+    #skills,
+    .skills-details-container {
+      margin-top: 0rem;
+    }
+    #skills .section_text_p1 {
+     margin-top: 0rem;
     }
     #profile,
     .section-container {
@@ -177,7 +180,7 @@
     .nav-links li a {
       font-size: 1rem;
     }
-    .experience-sub-title {
+    .skills-sub-title {
       font-size: 1.25rem;
     }
     .logo {
