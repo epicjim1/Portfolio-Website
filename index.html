@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek Luthra</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="assets/pageIcon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/pageIcon.png" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Abhishek Luthra</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
+      <div class="logo">Abhishek Luthra</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Abhishek Luthra</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-            </div>
+      <div class="logo">Abhishek Luthra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section_pic-container">
-            <img src="assets/pfp.png" alt="Abhishek Luthra profile picture">
+      <div class="section_pic-container">
+        <img src="assets/pfp.png" alt="Abhishek Luthra profile picture" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Abhishek Luthra</h1>
+        <p class="section_text_p2">Game / Software Developer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
         </div>
+<<<<<<< HEAD
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Abhishek Luthra</h1>
@@ -67,443 +83,839 @@
                     onclick="window.open('https://github.com/epicjim1', '_blank')"
                 />
             </div>
+=======
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/abhishek-luthra-a23373288/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/epicjim1', '_blank')"
+          />
+>>>>>>> 012ea9b (Revamped project section)
         </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='#about'"
-        />
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='#about'"
+      />
     </section>
     <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img
-                    src="./assets/tempMe.jpg"
-                    alt="Profile Picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                            src="./assets/experience.png"
-                            alt="skills Icon"
-                            class="icon"
-                        />
-                        <h3>skills</h3>
-                        <p>2+ years <br />Game Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="./assets/education.png"
-                            alt="Education Icon"
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree<br />Computer Science</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am a 2nd year computer science student at McMaster University.
-                        I am currently looking to enter the game development industry. 
-                        I have always been deeply in love with the millions of stories
-                        and worlds I could explore. The ability to do and be anything, to be
-                        able to tell my own story, and to see a living and breathing world is
-                        something I knew I had to make as a child. I wish to further advance
-                        the technology and immersion for this medium, whether that be
-                        through Vr/Ar, incorporating AI, or something completely new! Feel
-                        free to check out some of my projects linked below. If you ever want
-                        to talk about development or just chat about your favorite games,
-                        send me a message to get in touch!
-                    </p>
-                </div>
-            </div>
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/tempMe.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
         </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='#projects'"
-        />
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="skills Icon"
+                class="icon"
+              />
+              <h3>skills</h3>
+              <p>3+ years <br />Game Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a 2nd year computer science student at McMaster University. I
+              am currently looking to enter the game development industry. I
+              have always been deeply in love with the millions of stories and
+              worlds I could explore. The ability to do and be anything, to be
+              able to tell my own story, and to see a living and breathing world
+              is something I knew I had to make as a child. I wish to further
+              advance the technology and immersion for this medium, whether that
+              be through Vr/Ar, incorporating AI, or something completely new!
+              Feel free to check out some of my projects linked below. If you
+              ever want to talk about development or just chat about your
+              favorite games, send me a message to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
     </section>
     <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="about-containers" style="justify-content: space-around;">
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/BallDropIcon.jpg"
-                            alt="Ball Drop Image"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Ball Drop Mobile</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1/BallDrop-Game'">
-                            
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'">
-                            
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/parkingGame.jpg"
-                            alt="Ball Drop Image"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">(Unititled) Game</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn-single btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1/ParkingGame'">
-                            
-                            Github
-                        </button>
-                        <!-- <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'">
-                            
-                            Live Demo
-                        </button> -->
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/revengeBig.jpg"
-                            alt="Path of Revenge Game"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Path of Revenge</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1/PathOfRevenge-Game'">
-                            
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://epicjim2005.itch.io/the-path-of-revenge'">
-                            
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/robotBig.jpg"
-                            alt="Robot Image"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Line-Tracking Robot</h2>
-                    <div class="btn-container">
-                        <!--<button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1'" style="background-color: red;">
-                            
-                            Github
-                        </button>-->
-                        <button
-                            class="btn-single btn-color2 project-btn"
-                            onclick="location.href='https://youtu.be/x39QobqsbL0'">
-                            
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/MVCBig.jpg"
-                            alt="MVC Image"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Tic-Tac-Toe Game</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn-single btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1/Tic-Tac-Toe-MVC-Game'">
-                            
-                            Github
-                        </button>
-                        <!--<button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1'" style="background-color: red;">
-                            
-                            Live Demo
-                        </button>-->
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/termhintBig.jpg"
-                            alt="Termhint Image"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Termhint</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1/termhint'">
-                            
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://devpost.com/software/wordinator'">
-                            
-                            Dev Post
-                        </button>
-                    </div>
-                </div>
-                <div class="project-details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/Match It.jpg"
-                            alt="Capsule Game"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Match It</h2>
-                    <div class="btn-container">
-                        <!--<button
-                            class="btn btn-color2 project-btn"
-                            onclick="location.href='https://github.com/epicjim1'" style="background-color: red;">
-                            
-                            Github
-                        </button>-->
-                        <button
-                            class="btn-single btn-color2 project-btn"
-                            onclick="location.href='https://stabl.rocks/ShowModulePublish?modulePublishId=b6748206-462b-4280-809c-bc020edc3a8e'">
-                            
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="project-row">
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/m1.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/m4.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/m5.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/m2.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/m3.PNG" alt="Ball Drop1" />
+              </div>
             </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">MovieTrackr</h2>
+            <p class="project-meta">React, Firebase, Chakra UI • 2025</p>
+            <p class="project-desc">
+              A website that tracks film/tv you want to watch and have watched,
+              similar to letterboxd. Since I am a big cinephile I made it easy
+              to use and have multiple filtering options, so you can finally
+              decide what to watch out of huge backlog! If you love movies too,
+              I'd love to connect :)
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/movieTrackr'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color1"
+                onclick="location.href='https://movie-trackr.vercel.app/'"
+              >
+                Go to Site!
+              </button>
+            </div>
+          </div>
         </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='#skills'"
-        />
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/th1.gif" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/th5.gif" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/th3.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/th4.jpg" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Termhint</h2>
+            <p class="project-meta">HTML, CSS, JavaScript, Flask • 2024</p>
+            <p class="project-desc">
+              A hackathon project that uses machine learning to suggest synonyms
+              in real time, helping newcomers expand vocabulary. Built in a team
+              of 2 over 3 days.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://devpost.com/software/wordinator'"
+              >
+                Devpost
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/c1.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/c2.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/c3.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/c4.jpg" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Capsule</h2>
+            <p class="project-meta">Dart, Flutter • 2024</p>
+            <p class="project-desc">
+              Built in a team of 4 as part of DeltaHacks Hackathon. Capsule
+              allows you to visually track the progress in your body. Meant to
+              incentivize people to make positive changes in their lives while
+              giving them an inclusive platform to inspire others.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/Capsule'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://devpost.com/software/capsule-etgkiq'"
+              >
+                Devpost
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/s1.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s2.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s5.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s4.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s6.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s3.PNG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/s7.PNG" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+              <span class="dot" data-index="6"></span>
+              <span class="dot" data-index="7"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Match It!</h2>
+            <p class="project-meta">Elm, Figma • 2024</p>
+            <p class="project-desc">
+              A puzzle matching game built in a team of 7 as a semester long
+              project. A physics-based puzzle mobile game where players drop
+              balls strategically to complete levels. Designed with smooth
+              controls and intuitive UI.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://stabl.rocks/ShowModulePublish?modulePublishId=b6748206-462b-4280-809c-bc020edc3a8e'"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/VfJwcwkTg5Y?si=fGUAjMR6r5NGzL5y"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/Sc1.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/Sc2.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/Sc4.jpg" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/Sc5.jpg" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Ball Drop Mobile</h2>
+            <p class="project-meta">Unity, C#, Xcode • 2023</p>
+            <p class="project-desc">
+              A physics-based puzzle mobile game where players drop balls
+              strategically to complete levels. Designed with smooth controls
+              and intuitive UI.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/BallDrop-Game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/MVC.jpg" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Tic-Tac-Toe</h2>
+            <p class="project-meta">Java, AWT • 2022</p>
+            <p class="project-desc">
+              A simple Tic-Tac-Toe game as part of our grade 12 final project.
+              Features different difficulty settings and custom UI. Made with
+              the Model View Controller design pattern.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/Tic-Tac-Toe-MVC-Game'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/p1.JPG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/p3.JPG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/p5.JPG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/p2.JPG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/p4.JPG" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">The Path of Revenge</h2>
+            <p class="project-meta">Unity, C# • 2020</p>
+            <p class="project-desc">
+              A 2D top-down shooter where players will fight through various
+              enemies and puzzles to claim revenge for the murder of their
+              father. This is the first full game I finished and published.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/PathOfRevenge-Game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://epicjim2005.itch.io/the-path-of-revenge'"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-details-container2">
+          <div class="project-media">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="./assets/sc/n2.JPG" alt="Ball Drop1" />
+              </div>
+              <div class="slide fade">
+                <video controls muted>
+                  <source src="./assets/sc/n3.mp4" type="video/mp4" />
+                  Your browser does not support video.
+                </video>
+              </div>
+              <div class="slide fade">
+                <img src="./assets/sc/n1.jpg" alt="Ball Drop1" />
+              </div>
+            </div>
+            <div class="dots">
+              <span class="arrow2 prev">&#10094;</span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="arrow2 next">&#10095;</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title2">Neon Gunslinger</h2>
+            <p class="project-meta">Unity, C# • 2020</p>
+            <p class="project-desc">
+              One of attempts at creating a FPS. Although I consider this a big
+              failure now, I learned a lot about pathfindng, mission design, and
+              testing.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://epicjim2005.itch.io/neon-gunslinger'"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="skills-details-container">
+        <div class="about-containers" style="justify-content: space-around">
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/BallDropIcon.jpg"
+                alt="Ball Drop Image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Ball Drop Mobile</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/BallDrop-Game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/parkingGame.jpg"
+                alt="Ball Drop Image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">(Unititled) Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn-single btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/ParkingGame'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/revengeBig.jpg"
+                alt="Path of Revenge Game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Path of Revenge</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/PathOfRevenge-Game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://epicjim2005.itch.io/the-path-of-revenge'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/robotBig.jpg"
+                alt="Robot Image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Line-Tracking Robot</h2>
+            <div class="btn-container">
+              <button
+                class="btn-single btn-color2 project-btn"
+                onclick="location.href='https://youtu.be/x39QobqsbL0'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/MVCBig.jpg"
+                alt="MVC Image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Tic-Tac-Toe Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn-single btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/Tic-Tac-Toe-MVC-Game'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/termhintBig.jpg"
+                alt="Termhint Image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Termhint</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/epicjim1/termhint'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://devpost.com/software/wordinator'"
+              >
+                Dev Post
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Match It.jpg"
+                alt="Capsule Game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Match It</h2>
+            <div class="btn-container">
+              <button
+                class="btn-single btn-color2 project-btn"
+                onclick="location.href='https://stabl.rocks/ShowModulePublish?modulePublishId=b6748206-462b-4280-809c-bc020edc3a8e'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
     </section>
     <section id="skills">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Languages / Frameworks</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Unity</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>C</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Unreal</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Languages / Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Web Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>React</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Flutter</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                src="./assets/checkmark.png"
-                                alt="Eperience Icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unreal</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Eperience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow Icon"
-            class="icon arrow"
-            onclick="location.href='#contact'"
-        />
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
     </section>
     <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                    src="./assets/email.png"
-                    alt="Email Icon"
-                    class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:abhishekluthra2005@gmail.com">abhishekluthra2005@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                    src="./assets/linkedin.png"
-                    alt="LinkedIn Icon"
-                    class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/abhishek-luthra-a23373288/">LinkedIn</a></p>
-            </div>
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:abhishekluthra2005@gmail.com"
+              >abhishekluthra2005@gmail.com</a
+            >
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/abhishek-luthra-a23373288/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Abhishek Luthra. All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abhishek Luthra. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
