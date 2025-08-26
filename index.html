@@ -31,8 +31,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="section-container">
         <div class="section_pic-container">
           <img
-            src="./assets/tempMe.jpg"
+            src="./assets/aboutImg.JPG"
             alt="Profile Picture"
             class="about-pic"
           />
@@ -85,7 +85,7 @@
                 class="icon"
               />
               <h3>skills</h3>
-              <p>3+ years <br />Game Development</p>
+              <p>4+ years <br />Game & Software Development</p>
             </div>
             <div class="details-container">
               <img
@@ -94,23 +94,22 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />Computer Science</p>
+              <p>BASc. Degree<br />Computer Science</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am a 2nd year computer science student at McMaster University. I
-              am currently looking to enter the game development industry. I
-              have always been deeply in love with the millions of stories and
-              worlds I could explore. The ability to do and be anything, to be
-              able to tell my own story, and to see a living and breathing world
-              is something I knew I had to make as a child. I wish to further
-              advance the technology and immersion for this medium, whether that
-              be through Vr/Ar, incorporating AI, or something completely new!
-              Feel free to check out some of my projects linked below. If you
-              ever want to talk about development or just chat about your
-              favorite games, send me a message to get in touch!
+              I am a third year Computer Science student at McMaster University,
+              currently looking to grow in both game development and software development.
+              I've always been fascinated by the stories, worlds, and possibilities that
+              technology can create—from immersive games that bring entire universes to life,
+              to software that solves real problems and empowers people every day. My goal
+              is to push the boundaries of what's possible, whether through VR/AR, AI-driven
+              systems, or fresh approaches to how we build and experience technology.
+              Feel free to check out some of my projects linked below. If you ever want to
+              talk about development or just chat about your favorite games, don't hesitate to reach out!
             </p>
+            <!--I am a 2nd year computer science student at McMaster University. I am currently looking to enter the game development industry. I have always been deeply in love with the millions of stories and worlds I could explore. The ability to do and be anything, to be able to tell my own story, and to see a living and breathing world is something I knew I had to make as a child. I wish to further advance the technology and immersion for this medium, whether that be through Vr/Ar, incorporating AI, or something completely new! Feel free to check out some of my projects linked below. If you ever want to talk about development or just chat about your favorite games, send me a message to get in touch!-->
           </div>
         </div>
       </div>
@@ -124,396 +123,406 @@
     <section id="projects">
       <p class="section_text_p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="project-row">
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/m1.PNG" alt="Ball Drop1" />
+      <div class="tabs">
+        <button class="tab-button" data-target="games">Games</button>
+        <button class="tab-button active" data-target="software">Software</button>
+      </div>
+      <div id="games" class="tab-content">
+        <div class="project-row">
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/s1.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s2.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s5.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s4.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s6.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s3.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/s7.PNG" alt="Ball Drop1" />
+                </div>
               </div>
-              <div class="slide fade">
-                <img src="./assets/sc/m4.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/m5.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/m2.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/m3.PNG" alt="Ball Drop1" />
-              </div>
-            </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="dot" data-index="5"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">MovieTrackr</h2>
-            <p class="project-meta">React, Firebase, Chakra UI • 2025</p>
-            <p class="project-desc">
-              A website that tracks film/tv you want to watch and have watched,
-              similar to letterboxd. Since I am a big cinephile I made it easy
-              to use and have multiple filtering options, so you can finally
-              decide what to watch out of huge backlog! If you love movies too,
-              I'd love to connect :)
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://github.com/epicjim1/movieTrackr'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color1"
-                onclick="location.href='https://movie-trackr.vercel.app/'"
-              >
-                Go to Site!
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/th1.gif" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/th5.gif" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/th3.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/th4.jpg" alt="Ball Drop1" />
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
+                <span class="dot" data-index="7"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="arrow2 next">&#10095;</span>
+            <div class="project-info">
+              <h2 class="project-title2">Match It!</h2>
+              <p class="project-meta">Elm, Figma • 2024</p>
+              <p class="project-desc">
+                A puzzle matching game built in a team of 7 as a semester long
+                project. A physics-based puzzle mobile game where players drop
+                balls strategically to complete levels. Designed with smooth
+                controls and intuitive UI.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://stabl.rocks/ShowModulePublish?modulePublishId=b6748206-462b-4280-809c-bc020edc3a8e'"
+                >
+                  Play
+                </button>
+              </div>
             </div>
           </div>
-          <div class="project-info">
-            <h2 class="project-title2">Termhint</h2>
-            <p class="project-meta">HTML, CSS, JavaScript, Flask • 2024</p>
-            <p class="project-desc">
-              A hackathon project that uses machine learning to suggest synonyms
-              in real time, helping newcomers expand vocabulary. Built in a team
-              of 2 over 3 days.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://devpost.com/software/wordinator'"
-              >
-                Devpost
-              </button>
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <iframe
+                    width="100%"
+                    height="300"
+                    src="https://www.youtube.com/embed/VfJwcwkTg5Y?si=fGUAjMR6r5NGzL5y"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/Sc1.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/Sc2.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/Sc4.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/Sc5.jpg" alt="Ball Drop1" />
+                </div>
+              </div>
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="arrow2 next">&#10095;</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title2">Ball Drop Mobile</h2>
+              <p class="project-meta">Unity, C#, Xcode • 2023</p>
+              <p class="project-desc">
+                A physics-based puzzle mobile game where players drop balls
+                strategically to complete levels. Designed with smooth controls
+                and intuitive UI.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://github.com/epicjim1/BallDrop-Game'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'"
+                >
+                  Play
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/c1.jpg" alt="Ball Drop1" />
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/MVC.jpg" alt="Ball Drop1" />
+                </div>
               </div>
-              <div class="slide fade">
-                <img src="./assets/sc/c2.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/c3.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/c4.jpg" alt="Ball Drop1" />
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">Capsule</h2>
-            <p class="project-meta">Dart, Flutter • 2024</p>
-            <p class="project-desc">
-              Built in a team of 4 as part of DeltaHacks Hackathon. Capsule
-              allows you to visually track the progress in your body. Meant to
-              incentivize people to make positive changes in their lives while
-              giving them an inclusive platform to inspire others.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://github.com/epicjim1/Capsule'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://devpost.com/software/capsule-etgkiq'"
-              >
-                Devpost
-              </button>
+            <div class="project-info">
+              <h2 class="project-title2">Tic-Tac-Toe</h2>
+              <p class="project-meta">Java, AWT • 2022</p>
+              <p class="project-desc">
+                A simple Tic-Tac-Toe game as part of our grade 12 final project.
+                Features different difficulty settings and custom UI. Made with
+                the Model View Controller design pattern.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://github.com/epicjim1/Tic-Tac-Toe-MVC-Game'"
+                >
+                  Github
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/s1.PNG" alt="Ball Drop1" />
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/p1.JPG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/p3.JPG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/p5.JPG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/p2.JPG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/p4.JPG" alt="Ball Drop1" />
+                </div>
               </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s2.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s5.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s4.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s6.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s3.PNG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/s7.PNG" alt="Ball Drop1" />
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="dot" data-index="5"></span>
-              <span class="dot" data-index="6"></span>
-              <span class="dot" data-index="7"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">Match It!</h2>
-            <p class="project-meta">Elm, Figma • 2024</p>
-            <p class="project-desc">
-              A puzzle matching game built in a team of 7 as a semester long
-              project. A physics-based puzzle mobile game where players drop
-              balls strategically to complete levels. Designed with smooth
-              controls and intuitive UI.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://stabl.rocks/ShowModulePublish?modulePublishId=b6748206-462b-4280-809c-bc020edc3a8e'"
-              >
-                Play
-              </button>
+            <div class="project-info">
+              <h2 class="project-title2">The Path of Revenge</h2>
+              <p class="project-meta">Unity, C# • 2020</p>
+              <p class="project-desc">
+                A 2D top-down shooter where players will fight through various
+                enemies and puzzles to claim revenge for the murder of their
+                father. This is the first full game I finished and published.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://github.com/epicjim1/PathOfRevenge-Game'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://epicjim2005.itch.io/the-path-of-revenge'"
+                >
+                  Play
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <iframe
-                  width="100%"
-                  height="300"
-                  src="https://www.youtube.com/embed/VfJwcwkTg5Y?si=fGUAjMR6r5NGzL5y"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/n2.JPG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <video controls muted>
+                    <source src="./assets/sc/n3.mp4" type="video/mp4" />
+                    Your browser does not support video.
+                  </video>
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/n1.jpg" alt="Ball Drop1" />
+                </div>
               </div>
-              <div class="slide fade">
-                <img src="./assets/sc/Sc1.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/Sc2.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/Sc4.jpg" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/Sc5.jpg" alt="Ball Drop1" />
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="dot" data-index="5"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">Ball Drop Mobile</h2>
-            <p class="project-meta">Unity, C#, Xcode • 2023</p>
-            <p class="project-desc">
-              A physics-based puzzle mobile game where players drop balls
-              strategically to complete levels. Designed with smooth controls
-              and intuitive UI.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://github.com/epicjim1/BallDrop-Game'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://epicjim2005.itch.io/ball-puzzle'"
-              >
-                Play
-              </button>
+            <div class="project-info">
+              <h2 class="project-title2">Neon Gunslinger</h2>
+              <p class="project-meta">Unity, C# • 2020</p>
+              <p class="project-desc">
+                One of attempts at creating a FPS. Although I consider this a big
+                failure now, I learned a lot about pathfindng, mission design, and
+                testing.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://epicjim2005.itch.io/neon-gunslinger'"
+                >
+                  Play
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/MVC.jpg" alt="Ball Drop1" />
+      </div>
+      <div id="software" class="tab-content active">
+        <div class="project-row">
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/m1.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/m4.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/m5.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/m2.PNG" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/m3.PNG" alt="Ball Drop1" />
+                </div>
+              </div>
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">Tic-Tac-Toe</h2>
-            <p class="project-meta">Java, AWT • 2022</p>
-            <p class="project-desc">
-              A simple Tic-Tac-Toe game as part of our grade 12 final project.
-              Features different difficulty settings and custom UI. Made with
-              the Model View Controller design pattern.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://github.com/epicjim1/Tic-Tac-Toe-MVC-Game'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/p1.JPG" alt="Ball Drop1" />
+            <div class="project-info">
+              <h2 class="project-title2">MovieTrackr</h2>
+              <p class="project-meta">React, Firebase, Chakra UI • 2025</p>
+              <p class="project-desc">
+                A website that tracks film/tv you want to watch and have watched,
+                similar to letterboxd. Since I am a big cinephile I made it easy
+                to use and have multiple filtering options, so you can finally
+                decide what to watch out of huge backlog! If you love movies too,
+                I'd love to connect :)
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://github.com/epicjim1/movieTrackr'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color1"
+                  onclick="location.href='https://movie-trackr.vercel.app/'"
+                >
+                  Go to Site!
+                </button>
               </div>
-              <div class="slide fade">
-                <img src="./assets/sc/p3.JPG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/p5.JPG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/p2.JPG" alt="Ball Drop1" />
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/p4.JPG" alt="Ball Drop1" />
-              </div>
-            </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
-              <span class="dot" data-index="5"></span>
-              <span class="arrow2 next">&#10095;</span>
             </div>
           </div>
-          <div class="project-info">
-            <h2 class="project-title2">The Path of Revenge</h2>
-            <p class="project-meta">Unity, C# • 2020</p>
-            <p class="project-desc">
-              A 2D top-down shooter where players will fight through various
-              enemies and puzzles to claim revenge for the murder of their
-              father. This is the first full game I finished and published.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://github.com/epicjim1/PathOfRevenge-Game'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://epicjim2005.itch.io/the-path-of-revenge'"
-              >
-                Play
-              </button>
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/th1.gif" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/th5.gif" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/th3.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/th4.jpg" alt="Ball Drop1" />
+                </div>
+              </div>
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="arrow2 next">&#10095;</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title2">Termhint</h2>
+              <p class="project-meta">HTML, CSS, JavaScript, Flask • 2024</p>
+              <p class="project-desc">
+                A hackathon project that uses machine learning to suggest synonyms
+                in real time, helping newcomers expand vocabulary. Built in a team
+                of 2 over 3 days.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://devpost.com/software/wordinator'"
+                >
+                  Devpost
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-details-container2">
-          <div class="project-media">
-            <div class="slideshow-container">
-              <div class="slide fade">
-                <img src="./assets/sc/n2.JPG" alt="Ball Drop1" />
+          <div class="project-details-container2">
+            <div class="project-media">
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="./assets/sc/c1.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/c2.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/c3.jpg" alt="Ball Drop1" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/sc/c4.jpg" alt="Ball Drop1" />
+                </div>
               </div>
-              <div class="slide fade">
-                <video controls muted>
-                  <source src="./assets/sc/n3.mp4" type="video/mp4" />
-                  Your browser does not support video.
-                </video>
-              </div>
-              <div class="slide fade">
-                <img src="./assets/sc/n1.jpg" alt="Ball Drop1" />
+              <div class="dots">
+                <span class="arrow2 prev">&#10094;</span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="arrow2 next">&#10095;</span>
               </div>
             </div>
-            <div class="dots">
-              <span class="arrow2 prev">&#10094;</span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-              <span class="arrow2 next">&#10095;</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title2">Neon Gunslinger</h2>
-            <p class="project-meta">Unity, C# • 2020</p>
-            <p class="project-desc">
-              One of attempts at creating a FPS. Although I consider this a big
-              failure now, I learned a lot about pathfindng, mission design, and
-              testing.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color2 project-btn"
-                onclick="location.href='https://epicjim2005.itch.io/neon-gunslinger'"
-              >
-                Play
-              </button>
+            <div class="project-info">
+              <h2 class="project-title2">Capsule</h2>
+              <p class="project-meta">Dart, Flutter • 2024</p>
+              <p class="project-desc">
+                Built in a team of 4 as part of DeltaHacks Hackathon. Capsule
+                allows you to visually track the progress in your body. Meant to
+                incentivize people to make positive changes in their lives while
+                giving them an inclusive platform to inspire others.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://github.com/epicjim1/Capsule'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color2 project-btn"
+                  onclick="location.href='https://devpost.com/software/capsule-etgkiq'"
+                >
+                  Devpost
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -678,7 +687,7 @@
       <p class="section_text_p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="skills-details-container">
-        <div class="about-containers">
+        <div class="about-containers" style="flex-direction: column;">
           <div class="details-container">
             <h2 class="skills-sub-title">Languages / Frameworks</h2>
             <div class="article-container">
@@ -841,8 +850,8 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:abhishekluthra2005@gmail.com"
-              >abhishekluthra2005@gmail.com</a
+            <a href="mailto:luthra5@mcmaster.ca"
+              >luthra5@mcmaster.ca</a
             >
           </p>
         </div>
@@ -871,7 +880,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Abhishek Luthra. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Abhishek Luthra. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

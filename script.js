@@ -5,6 +5,21 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // remove active from all
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    tabContents.forEach((c) => c.classList.remove("active"));
+
+    // activate current
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.target).classList.add("active");
+  });
+});
+
 document.querySelectorAll(".slideshow-container").forEach((slideshow) => {
   let slides = slideshow.querySelectorAll(".slide");
   let dots = slideshow.parentElement.querySelectorAll(".dot");
